@@ -25,12 +25,14 @@ render() {
           <div className="grid-container heading-container">
             <span className="grid-item name-heading">Name</span>
             <span className="grid-item phone-heading">Phone</span>
+           
           </div>
 
           { subsribers.map( sub =>{
               return <div key ={sub.id} className="grid-container ">
                 <span className="grid-item ">{sub.Name}</span>
                 <span className="grid-item">{sub.Phone}</span>
+                <button className="custom-btn  delete-btn ">Delete</button>
               </div>
            } )
           }
