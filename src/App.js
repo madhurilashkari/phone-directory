@@ -17,7 +17,8 @@ render() {
 ]
   return (
     <div>
-    <Header/>
+      
+    <Header heading="Phone Directory" />
 
     <div className="component-body-container">
           <button className="custom-btn add-btn">Add</button>
@@ -28,6 +29,7 @@ render() {
            
           </div>
 
+                   
           { subsribers.map( sub =>{
               return <div key ={sub.id} className="grid-container ">
                 <span className="grid-item ">{sub.Name}</span>
@@ -42,7 +44,7 @@ render() {
    </div> 
     
    
-  );
-}
+  )
+  }
 }
 export default App;
