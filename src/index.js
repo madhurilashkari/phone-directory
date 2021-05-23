@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './common/common.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import AddSubScriber from './AddSubScriber';
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AddSubScriber />
   </React.StrictMode>,
   document.getElementById('root')
 );
